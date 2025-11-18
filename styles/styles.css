@@ -23,17 +23,29 @@ body {
 /* Profiles Panels */
 
 .profile-panel {
-  background-color: hsl(246, 80%, 60%);
+  background-color: hsl(235, 46%, 20%);
   border-radius: 15px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
+  height: 775px;
+  margin-top: 45px;
+}
+
+.profile-bg {
+
+  background-color: hsl(246, 80%, 60%);
+  padding: 1.5rem;
+  height: 750px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 1;
+  position: relative;
 }
 
 .profile-info {
-  display: flex;
   align-items: center;
   gap: 1rem;
 }
@@ -42,6 +54,14 @@ body {
   width: 60px;
   border: 2px solid white;
   border-radius: 50%;
+}
+
+.profile-lower {
+  margin-top: 150px;
+  font-family: 'Rubik';
+  font-size: 30px;
+  font-weight: lighter;
+
 }
 
 .timeframe-selector {
@@ -91,8 +111,6 @@ body {
   border-radius: 20px;
 
 }
-
-
 
 .card-icon {
   position: absolute;
