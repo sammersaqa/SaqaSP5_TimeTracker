@@ -131,7 +131,7 @@ body {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   overflow: hidden;
-  
+
 }
 
 .card-icon {
@@ -204,7 +204,7 @@ body {
     flex-direction: row;
     height: auto;
     min-height: 1px;
-    
+
   }
 
   .profile-bg {
@@ -235,7 +235,7 @@ body {
     justify-content: space-around;
     align-items: center;
     min-width: 300px;
-    
+
   }
 
   .timeframe-selector button {
