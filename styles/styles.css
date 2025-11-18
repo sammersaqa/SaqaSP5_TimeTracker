@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik';
   background-color: hsl(226, 43%, 10%);
   color: white;
   min-height: 100vh;
@@ -18,6 +18,8 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding: 3rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* Profiles Panels */
@@ -25,62 +27,70 @@ body {
 .profile-panel {
   background-color: hsl(235, 46%, 20%);
   border-radius: 15px;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  height: 775px;
-  margin-top: 45px;
+  height: 818px;
+  overflow: hidden;
+  margin-top: 15px;
 }
 
 .profile-bg {
-
   background-color: hsl(246, 80%, 60%);
-  padding: 1.5rem;
-  height: 750px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  z-index: 1;
-  position: relative;
+  padding: 2rem;
+  padding-bottom: 20rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .profile-info {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
 .profile-pic {
-  width: 60px;
-  border: 2px solid white;
+  width: 80px;
+  border: 3px solid white;
   border-radius: 50%;
 }
 
-.profile-lower {
-  margin-top: 150px;
+.profile-lower p {
   font-family: 'Rubik';
-  font-size: 30px;
+  font-size: 15px;
+  color: hsl(236, 100%, 87%);
+  margin-top: 70px;
   font-weight: lighter;
+}
 
+.profile-lower h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 .timeframe-selector {
-  margin-top: 2rem;
+  padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .timeframe-selector button {
   background: none;
   border: none;
-  color: hsl(236, 100%, 87%);
-  font-size: 1rem;
+  color: hsl(235, 45%, 61%);
+  font-size: 1.125rem;
   cursor: pointer;
   text-align: left;
+  transition: color 0.3s ease;
+  font-family: 'Rubik';
 }
 
-.timeframe-selector button.active {
+.timeframe-selector button:hover {
   color: white;
 }
 
@@ -100,65 +110,259 @@ body {
 .activity-card {
   position: relative;
   border-radius: 15px;
-  overflow: hidden;
+  overflow: visible;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.activity-card:hover .card-content {
+  background-color: hsl(235, 45%, 30%);
 }
 
 .card-bg {
-  height: 85px;
-  background-color: var(--card-color);
+  height: 65px;
+  background-color: #1C204B;
   position: relative;
-  margin-top: 30px;
-  border-radius: 20px;
-
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  
 }
 
 .card-icon {
   position: absolute;
   top: -10px;
-  right: 10px;
-  width: 80px;
-  margin-top: 10px;
+  right: 18px;
+  width: 78px;
 }
 
 .card-content {
   background-color: hsl(235, 46%, 20%);
-  padding: 1.5rem;
-  margin-top: -40px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  padding: 1.75rem;
+  margin-top: -25px;
+  border-radius: 15px;
   z-index: 1;
   position: relative;
+  transition: background-color 0.3s ease;
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-header h3 {
+  font-family: 'Rubik';
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-header img {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.card-header img:hover {
+  opacity: 1;
 }
 
 .card-body h2 {
-  font-size: 2.5rem;
-  margin: 1rem 0 0.5rem;
+  font-family: 'Rubik';
+  font-size: 56px;
+  margin-bottom: 0.5rem;
+  font-weight: 100;
 }
 
 .card-body p {
   color: hsl(236, 100%, 87%);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .mainMargin {
   margin-top: 150px;
 }
 
-/* Mobile */
-
-@media (max-width: 768px) {
+/* Tablet Styles */
+@media (max-width: 1024px) {
   .tracker-container {
-    grid-template-columns: 1fr;
-    padding: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-top: 100px;
+  }
+
+  .profile-panel {
+    grid-column: 1 / 4;
+    flex-direction: row;
+    height: auto;
+    min-height: 180px;
+  }
+
+  .profile-bg {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    flex: 1;
+  }
+
+  .profile-info {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 70px;
+  }
+
+  .profile-lower h1 {
+    font-size: 2rem;
+  }
+
+  .timeframe-selector {
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 300px;
+    
+  }
+
+  .timeframe-selector button {
+    text-align: center;
   }
 
   .activity-grid {
+    grid-column: 1 / 4;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-body h2 {
+    font-size: 3rem;
+  }
+
+  .mainMargin {
+    margin-top: 80px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .tracker-container {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-top: 80px;
+  }
+
+  .profile-panel {
+    grid-column: 1;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .profile-bg {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .profile-info {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .profile-pic {
+    width: 64px;
+  }
+
+  .profile-lower h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-lower p {
+    font-size: 0.8rem;
+  }
+
+  .timeframe-selector {
+    flex-direction: row;
+    padding: 1.5rem;
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .timeframe-selector button {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .activity-grid {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card-content {
+    padding: 1.5rem;
+  }
+
+  .card-header {
+    margin-bottom: 0.5rem;
+  }
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-body h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+
+  .mainMargin {
+    margin-top: 50px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 375px) {
+  .tracker-container {
+    padding: 1rem;
+  }
+
+  .profile-bg {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .profile-pic {
+    width: 56px;
+  }
+
+  .profile-lower h1 {
+    font-size: 1.25rem;
+  }
+
+  .timeframe-selector {
+    padding: 1.25rem;
+  }
+
+  .timeframe-selector button {
+    font-size: 0.95rem;
+  }
+
+  .card-body h2 {
+    font-size: 1.75rem;
   }
 }
