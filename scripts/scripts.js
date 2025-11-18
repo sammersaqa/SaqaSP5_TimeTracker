@@ -38,7 +38,7 @@ function renderCards(data) {
         <img src="/assets/${icon}" class="card-icon" alt="${title} icon" />
       </div>
       <div class="card-content">
-        <div class="card-header">
+        <div class="card-header" >
           <h3>${title}</h3>
           <img src="/assets/images/icon-ellipsis.svg" alt="Options" />
         </div>
