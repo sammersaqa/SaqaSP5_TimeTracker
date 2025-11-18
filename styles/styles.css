@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  height: 818px;
+  height: 795px;
   overflow: hidden;
   margin-top: 15px;
 }
@@ -176,8 +176,8 @@ body {
 .card-body h2 {
   font-family: 'Rubik';
   font-size: 56px;
-  margin-bottom: 0.5rem;
-  font-weight: 100;
+  color: #ffffff;
+  font-weight: lighter;
 }
 
 .card-body p {
