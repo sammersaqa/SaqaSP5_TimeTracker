@@ -43,6 +43,7 @@ body {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  height: 500px;
   gap: 2.5rem;
 }
 
@@ -96,6 +97,10 @@ body {
 
 .timeframe-selector button.active {
   color: white;
+}
+
+.fonts {
+  font-size: 18px;
 }
 
 /* Activity Cards */
@@ -198,7 +203,8 @@ body {
     grid-column: 1 / 4;
     flex-direction: row;
     height: auto;
-    min-height: 180px;
+    min-height: 1px;
+    
   }
 
   .profile-bg {
