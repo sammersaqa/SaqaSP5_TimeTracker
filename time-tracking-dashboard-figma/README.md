@@ -1,8 +1,16 @@
-# Time Tracking Dashboard
-
 **Your Name:** Sammer Saqa
 **Last Updated:** November 19, 2025  
 **Exercise Name:** Time Tracker
+<!------------ Peer Review -------------->
+**Reviewed by:**[Insert Name Here]
+**Notes:** 
+
+# Figma
+https://www.figma.com/design/ZaxV04EMrLatCav3a9Gmio/time-tracking-dashboard?node-id=0-1&p=f&t=6GJ6AU75hUrMQcs0-0
+
+# Github
+https://github.com/sammersaqa/SaqaSP5_TimeTracker.git
+
 
 ## What I Did
 
@@ -20,7 +28,3 @@
 - **Nov 18, 2025**  
   Set up the HTML, CSS, and JSON file. Got the basic layout and card rendering working.
 
-## Peer Review
-
-**Reviewed by:** 
-**Notes:** 

@@ -1,4 +1,4 @@
-let currentRange = 'weekly';
+let currentRange = 'week';
 
 
 const iconMap = { 
