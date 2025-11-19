@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  height: 795px;
+  height: 765px;
   overflow: hidden;
   margin-top: 15px;
 }
@@ -44,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 500px;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .profile-info {
@@ -111,7 +111,7 @@ body {
   grid-column: 2 / 5;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: .5rem;
 }
 
 .activity-card {
