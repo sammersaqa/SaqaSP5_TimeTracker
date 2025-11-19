@@ -3,7 +3,7 @@
 **Exercise Name:** Time Tracker  
 <!------------ Peer Review -------------->  
 **Reviewed by:** [Insert Name Here]  
-**Notes:**  
+**Notes:**  [Please put review here]
 
 ---
 
