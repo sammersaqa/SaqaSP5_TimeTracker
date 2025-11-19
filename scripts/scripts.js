@@ -53,7 +53,7 @@ function renderCards(data) {
 }
 
 fetch('/data/time-data.json')
-  .then(res => res.json())
+  .then(Response => Response.json())
   .then(data => {
     renderCards(data);
 
