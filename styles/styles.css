@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  height: 725px;
+  height: 715px;
   overflow: hidden;
   margin-top: 15px;
 }
@@ -78,7 +78,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  
+
 }
 
 .timeframe-selector button {
@@ -90,7 +90,7 @@ body {
   text-align: left;
   transition: color 0.3s ease;
   font-family: 'Rubik';
-  
+
 }
 
 .timeframe-selector button:hover {
@@ -145,31 +145,31 @@ body {
 .card-content {
   background-color: hsl(235, 46%, 20%);
   padding: 1.75rem;
-  margin-top: -25px;
+  margin-top: -30px;
   border-radius: 15px;
-  z-index: 1;
+  z-index: auto;
   position: relative;
   transition: background-color 0.3s ease;
 }
 
 .card-header {
-    display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 
 }
 
 .card-header {
-   margin: 0;
+  margin: 0 -7rem;
   padding: 0;
   font-size: 18px;
   font-weight: 600;
 
-  
+
 }
 
 .card-header img {
-   width: 20px;
+  width: 25px;
   height: auto;
   margin: 0;
   padding: 0;
@@ -190,13 +190,13 @@ body {
 h3 {
   font-family: 'Rubik';
   font-size: 20px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .card-body p {
   color: hsl(236, 100%, 87%);
   font-size: 0.95rem;
-  
+
 }
 
 .mainMargin {
