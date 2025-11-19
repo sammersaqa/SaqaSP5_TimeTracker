@@ -85,7 +85,7 @@ body {
   background: none;
   border: none;
   color: hsl(235, 45%, 61%);
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   text-align: left;
   transition: color 0.3s ease;
