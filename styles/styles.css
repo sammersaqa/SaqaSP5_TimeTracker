@@ -74,21 +74,23 @@ body {
 }
 
 .timeframe-selector {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem 5rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  
 }
 
 .timeframe-selector button {
   background: none;
   border: none;
   color: hsl(235, 45%, 61%);
-  font-size: 1.125rem;
+  font-size: 2rem;
   cursor: pointer;
   text-align: left;
   transition: color 0.3s ease;
   font-family: 'Rubik';
+  
 }
 
 .timeframe-selector button:hover {
