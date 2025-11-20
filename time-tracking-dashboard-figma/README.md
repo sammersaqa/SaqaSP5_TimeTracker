@@ -1,9 +1,9 @@
 **Name:** Sammer Saqa  
-**Last Updated:** November 19, 2025  
+**Last Updated:** November 20, 2025  
 **Exercise Name:** Time Tracker  
 <!------------ Peer Review -------------->  
 **Reviewed by:** [Xavier]  
-<!-- **Notes:**  [Okay the only thing I see fix is the font for the report, and jeremy name, numbers/hours as I see you have the font-family: 'Rubik';, you just need to fix it to font-family: "Rubik", sans-serif; but besides that everything else works as it intend to work. ] --> [This has been fixed to the best of my ability to have it match up. Font sizes are a little different, but it matches the mock figma]
+<!-- **Notes:**  [Okay the only thing I see fix is the font for the report, and jeremy name, numbers/hours as I see you have the font-family: 'Rubik';, you just need to fix it to font-family: "Rubik", sans-serif; but besides that everything else works as it intend to work. ] --> [This has been fixed to the best of my ability to have it match up. Font sizes are a little different, but it matches the mock figma. If I put san-serif, the font completely changes that doesn't match the mock figma.]
 
 ---
 
@@ -27,6 +27,12 @@
 
 ## Updates
 
+### **Nov 20, 2025**
+- Reviewed all code and confirmed that no data is hardcoded beyond the provided assets and starter content.
+- Verified that all activity cards, timeframes, and data are dynamically rendered from the JSON file.
+- Confirmed that the user profile and timeframe buttons are part of the provided static content and used as intended.
+- Finalized font and size adjustments to best match both the live site and the Figma mockup.
+
 ### **Nov 19, 2025**
 - Cleaned up JavaScript logic and verified dynamic rendering with `fetch()` and time range switching.
 - Fixed padding issue in `.profile-bg`: `padding-bottom: 20rem` was blocked by `height: 500px`. Considered using `min-height` or removing fixed height.
@@ -36,6 +42,7 @@
 - Used DevTools and temporary background colors to inspect layout behavior and confirm spacing.
 - Ensured `card.innerHTML` structure in JavaScript matches expected layout for flex alignment.
 - Preserved original sizing and design from Figma while correcting alignment issues.
+- Adjusted all fonts and font sizes to the best of my ability to match the physical look of both my site and the Figma mockup.
 
 ### **Nov 18, 2025**
 - Set up initial HTML, CSS, and JSON structure.
