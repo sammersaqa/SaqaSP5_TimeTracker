@@ -3,7 +3,7 @@
 **Exercise Name:** Time Tracker  
 <!------------ Peer Review -------------->  
 **Reviewed by:** [Xavier]  
-**Notes:**  [Okay the only thing I see fix is the font for the report, and jeremy name, numbers/hours as I see you have the font-family: 'Rubik';, you just need to fix it to font-family: "Rubik", sans-serif; but besides that everything else works as it intend to work. ]
+<!-- **Notes:**  [Okay the only thing I see fix is the font for the report, and jeremy name, numbers/hours as I see you have the font-family: 'Rubik';, you just need to fix it to font-family: "Rubik", sans-serif; but besides that everything else works as it intend to work. ] --> [This has been fixed to the best of my ability to have it match up. Font sizes are a little different, but it matches the mock figma]
 
 ---
 
