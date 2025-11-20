@@ -2,8 +2,8 @@
 **Last Updated:** November 19, 2025  
 **Exercise Name:** Time Tracker  
 <!------------ Peer Review -------------->  
-**Reviewed by:** [Insert Name Here]  
-**Notes:**  [Please put review here]
+**Reviewed by:** [Xavier]  
+**Notes:**  [Okay the only thing I see fix is the font for the report, and jeremy name, numbers/hours as I see you have the font-family: 'Rubik';, you just need to fix it to font-family: "Rubik", sans-serif; but besides that everything else works as it intend to work. ]
 
 ---
 
